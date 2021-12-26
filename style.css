@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: hsl(216, 50%, 16%);
+    width: 234.25px;
+    height: 420px;
+    margin: 0;
+    position: relative;
+}
+
+.card_image {
+    border-radius: 10px;
+    height: 200px;
+    background-image: url('images/image-equilibrium.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -24px;
+    margin-left: -24px;
+    display: none;
+}
+.trans_layer {
+    height: 100%;
+    border-radius: 10px;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+.card_image:hover > .trans_layer {
+    opacity: 0.3;
+}
+.card_image:hover > .eye {
+    display: block;
+}
+
+.card_name {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.card_description {
+    margin-left: 15px;
+    margin-right: 15px;
+    color: grey;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card_price {
+    float: left;
+    color: hsl(178, 100%, 50%);
+    margin-top: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+}
+
+svg {
+    margin-right: 5px;
+}
+
+.card_time {
+    margin-top: 15px;
+    margin-right: 15px;
+    color: grey;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 12px;
+}
+
+hr {
+    position: absolute;
+    width: 209.5px;
+    top: 360px;
+    left: 15px;
+}
+
+.card_creator {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin-top: 35px;
+    margin-left: 15px;
+    font-size: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    color: grey;
+}
+.card_creator span {
+    color: white;
+    cursor: pointer;
+}
+.card_creator span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+img {
+    margin-right: 5px;
+}
+
+
+
