@@ -45,6 +45,6 @@ I learned how to apply an effect to an element while hovering on its parent
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - https://www.frontendmentor.io/profile/yourusername
 
 
